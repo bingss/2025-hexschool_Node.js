@@ -57,9 +57,11 @@ calculateTotalPrice();
 filterNoPurchaseMember();
 
 /*測試加入資料*/
-addPurchaseRecord("Alice",10); //1~10堂
-addPurchaseRecord("Evan",20); //11~20堂
-addPurchaseRecord("George",30); //21~堂
+addPurchaseRecord("Alice", 4); //>> 印出 console.log 文字為 新增購買記錄成功！會員 Alice 購買 4 堂課，總金額為 6000 元。
+addPurchaseRecord("Bob", 12); //>> 印出 console.log 文字為 新增購買記錄成功！會員 Bob 購買 12 堂課，總金額為 15600 元。
+addPurchaseRecord("Charlie", 25); //>> 印出 console.log 文字為 新增購買記錄成功！會員 Charlie 購買 25 堂課，總金額為 27500 元。
+addPurchaseRecord("Hannah", 50); //>> 印出 console.log 文字為 新增購買記錄成功！會員 Hannah 購買 50 堂課，總金額為 55000 元。
+addPurchaseRecord("名稱", "課程數量"); //>> 印出 console.log 文字為 輸入錯誤，請輸入有效的會員名稱和課程數量。
 addPurchaseRecord("",1)  //name為空
 addPurchaseRecord("APPLE",1); //name非會員
 addPurchaseRecord("Hannah",0); //數字<=0
