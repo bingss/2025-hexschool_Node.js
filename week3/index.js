@@ -5,7 +5,7 @@ const purchaseRecords = [];
 
 function addPurchaseRecord(name,couresCount){
     //name非會員、couresCount<=0、couresCount非數值型別，則報錯
-    if( !members.includes(name) || couresCount <= 0 || typeof(couresCount) !== "number")
+    if( typeof(couresCount) !== "number" || typeof(name) !== "string" ||!members.includes(name) || couresCount <= 0 )
     {
         console.log("輸入資訊錯誤，請重新輸入");
         return;
